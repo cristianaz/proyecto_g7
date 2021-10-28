@@ -1,0 +1,45 @@
+{% extends "base/base.html" %}
+
+<div class="container">
+{% block contenido%}
+<div class="row row-cols-1 row-cols-md-2 g-4 text-center">
+    <div class="col">
+        <div class="card text-white bg-dark mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Informe de Equipos</h5>
+                <p class="card-text"><iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="440" height="200" src="https://charts.mongodb.com/charts-project-0-pictq/embed/charts?id=19da92bc-09a8-46b0-8469-c55cc80351da&autoRefresh=10&theme=dark"></iframe></p>
+                <a href="{% url 'equipos:equipo_reporte' %}" class="btn text-white btn-outline-success">Descargar informe</a>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Informe de Asignaciones</h5>
+                    <p class="card-text"><iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="440" height="200" src="https://charts.mongodb.com/charts-project-0-pictq/embed/charts?id=8f1d6c50-5792-4ff8-8c20-db378e17d5a5&autoRefresh=10&theme=dark"></iframe></p>
+                    <a href="{% url 'Asignacion:asignacion_reporte' %}" class="btn text-white btn-outline-success">Descargar informe</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Informe de telefonía</h5>
+                        <p class="card-text"><iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="440" height="200" src="https://charts.mongodb.com/charts-project-0-pictq/embed/charts?id=3ae945f0-47bf-4799-8c7e-583085c27232&autoRefresh=10&theme=dark"></iframe></p>
+                        <a href="{% url 'telefono:telefono_reporte' %}" class="btn text-white btn-outline-success">Descargar informe</a>
+                    </div>
+                </div>
+            </div>
+        <div class="col">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                     <h5 class="card-title">Informe de PDA</h5>
+                     <p class="card-text"><iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="440" height="200" src="https://charts.mongodb.com/charts-project-0-pictq/embed/charts?id=d2931c20-ebf1-4e74-89bb-5329e77ce0af&autoRefresh=10&theme=dark"></iframe></p>
+                    <a href="{% url 'pda:pda_reporte' %}" class="btn text-white btn-outline-success">Descargar informe</a>
+                </div>
+            </div>
+        </div>
+</div>
+
+{% endblock %}
+</div>
